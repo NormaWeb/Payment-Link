@@ -1,0 +1,139 @@
+import React from 'react';
+import Shoe from './assets/image/Shoe.webp';
+import Footer from './sections/Footer';
+
+const App = () => {
+
+  return (
+    <>
+      <section className="flex justify-center max-lg:flex-col gap-10 w-full max-container sm:px-16 px-8 sm:py-12 py-6" >
+          <div className="flex flex-1 mt-10">
+            <div className="border-b border-gray-900/10">
+              <h2 className="text-2xl font-bold leading-7 text-gray-900 mb-1">Nike Air Trainers, Black with white sole </h2>
+              <p className="text-base mb-3"> By Kesply Enterprise</p>
+
+              <hr className="border-slate-900" />
+
+              <p className="text-sm leading-6 text-gray-600 mt-4">Fill this form and proceed to make payment.</p>
+
+              <div className="mt-5 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                <div className="sm:col-span-3">
+                  <label for="first-name" className="block text-sm font-medium leading-6 text-gray-900">First name</label>
+                  <div className="mt-2">
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                      className="block w-full rounded-md border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      placeholder="e.g Oluwabumi" />
+                  </div>
+                </div>
+
+                <div className="sm:col-span-3">
+                  <label for="last-name" className="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+                  <div class="mt-2">
+                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                      className="block w-full rounded-md border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      placeholder="e.g Adekunle" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                <div className="sm:col-span-3">
+                  <label for="first-name" className="block text-sm font-medium leading-6 text-gray-900">Email Address </label>
+                  <div class="mt-2">
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                      className="block w-full rounded-md border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      placeholder="youremail@here.com" />
+                  </div>
+                </div>
+
+                <div className="sm:col-span-3">
+                  <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Phone Number</label>
+                  <div className="mt-2">
+                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                      className="block w-full rounded-md border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      placeholder="e.g 0813679867" />
+                  </div>
+                </div>
+
+                <div className="sm:col-span-6">
+                  <label for="email" className="block text-sm font-medium leading-6 text-gray-900">Address</label>
+                  <div className="mt-2">
+                    <input id="email" name="email" type="email" autocomplete="email"
+                      className="block w-full rounded-md border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      placeholder="e.g 24b Ewet housing estate, Uyo" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="my-10">
+                <h3 className="mb-5 flex justify-between">
+                  <span className="text-sm"> Subtotal: </span>
+                  <span className="font-bold">NGN45, 500</span>
+                </h3>
+
+                <h3 className="mb-5 flex justify-between">
+                  <span className="text-sm"> Transaction Fee:</span>
+                  <span className="font-bold">NGN0</span>
+                </h3>
+
+                <hr className="border-slate-900" />
+
+                <h3 className="mt-5 flex justify-between">
+                  <span className="text-sm"> Total Amount:</span>
+                  <span className="font-bold">NGN45, 500</span>
+                </h3>
+              </div>
+
+              <button className="bg-blue-500 hover:bg-blue-400 active:bg-blue-500 text-white p-3 w-full rounded-lg border border-solid border-slate-900 dark:border-none mt-5">
+                Make payment</button>
+            </div>
+          </div>
+
+          <div className="flex-1 flex justify-center items-center">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <div className="">
+
+                <a href="">
+                  <img src={Shoe}
+                    className="object-cover py-0 items-center w-full  h-[300px]"
+                  />
+                </a>
+
+                <div className="max-w-sm mx-8 mt-5 my-10 ">
+                  <div className="bg-white rounded-xl shadow-lg p-6">
+                    <div className="flex flex-row justify-center gap-10">
+                      <div className="flex flex-1 flex-col">
+                        <h4 className="font-semibold text-gray-800">Total Payment</h4>
+                        <p className="text-gray-600 mt-2">Nike Air Trainers, Black with white sole</p>
+                      </div>
+
+                      <div className="flex flex-2 flex-col">
+                        <h4 className="font-semibold text-gray-800">NGN 45,000</h4>
+                        <p className="text-gray-600 mt-2">Fixed price</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="px-6 py-4">
+                  <h1 className="font-bold text-xl mb-2">Product Description </h1>
+                  <h4 className="text-gray-700 text-base mb-4">
+                    The radiance lives on in the Nike Air Force 1'07, the b-ball icon that puts a freshspin on what you know
+                    best:crispleather, bold colors and the perfect amount of flash to make you shine. </h4>
+
+                  <h4 className="text-gray-700 text-base mb-4">  The stitched leather overlays on the upper and heritage style, durability and support. </h4>
+
+                  <h4 className="text-gray-700 text-base mb-4">  Made from at least 20% recycled materials by weight, the original that wrote sneaker history gets updated
+                    with synthetic leather. </h4>
+
+                </div>
+              </div>
+            </div>
+          </div >
+      </section >
+      <Footer />
+    </>
+  )
+}
+
+export default App
